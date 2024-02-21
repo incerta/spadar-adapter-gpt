@@ -1,0 +1,32 @@
+{
+  "name": "spadar-adapter",
+  "version": "0.2.2",
+  "description": "The SPADAR schema complient OpenAI API adapter",
+  "keywords": [],
+  "main": "dist/adapter.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "prettify": "prettier --write .",
+    "type-check": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "author": "Mitch Neverhood",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/node": "^20.1.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "openai": "^4.24.1"
+  }
+}

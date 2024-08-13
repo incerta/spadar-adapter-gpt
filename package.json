@@ -1,7 +1,7 @@
 {
-  "name": "spadar-adapter",
+  "name": "spadar-adapter-gpt",
   "version": "0.2.2",
-  "description": "The SPADAR schema complient OpenAI API adapter",
+  "description": "The SPADAR schema compliant OpenAI API adapter",
   "keywords": [],
   "main": "dist/adapter.js",
   "scripts": {

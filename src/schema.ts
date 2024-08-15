@@ -1,12 +1,23 @@
 import * as I from './types'
 
-// cat file.txt | spadar mediator spadar-openai.GPT.string.string --model gpt-4 | spadar 
+// cat file.txt | spadar mediator spadar-openai.GPT.string.string --model gpt-4 | spadar
 
 const optionsSchema: I.ModelOptionsSchema = {
   model: {
     type: 'stringUnion',
     required: true,
     of: [
+      'gpt-4o',
+      'gpt-4o-2024-05-13',
+      'gpt-4o-2024-08-06',
+      'gpt-4o-mini',
+      'gpt-4o-mini-2024-07-18',
+      'gpt-4-turbo',
+      'gpt-4-turbo-2024-04-09',
+      'gpt-4-0125-preview',
+      'gpt-4-turbo-preview',
+      'gpt-4-1106-preview',
+      'gpt-4-vision-preview',
       'gpt-4',
       'gpt-4-0314',
       'gpt-4-0613',
@@ -17,9 +28,11 @@ const optionsSchema: I.ModelOptionsSchema = {
       'gpt-3.5-turbo-16k',
       'gpt-3.5-turbo-0301',
       'gpt-3.5-turbo-0613',
+      'gpt-3.5-turbo-1106',
+      'gpt-3.5-turbo-0125',
       'gpt-3.5-turbo-16k-0613',
     ],
-    default: 'gpt-4',
+    default: 'gpt-4o',
   },
   temperature: {
     type: 'number',
